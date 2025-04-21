@@ -770,7 +770,7 @@ const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mes
 
 // Set the WhatsApp link to the anchor tag
 document.getElementById('whatsapp-link').href = whatsappLink;
-
+document.getElementById('whatsapp-link-two').href = whatsappLink;
 // Validate newsletter form
 function validateNewsletterForm() {
     let isValid = true;
