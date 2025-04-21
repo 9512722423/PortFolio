@@ -759,22 +759,14 @@ function isMobile() {
     return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
-// Phone number and country code
-const phoneNumber = '9512722423';
-const countryCode = '91'; // India country code
+// Phone number with country code
+const phoneNumber = '919512722423'; // Always include country code (no + or 0)
 
 // Message you want to send
 const message = 'Hi! Keshvi! I’d love to know more about the mehndi and nail art services offered by Keshvi Mehndi & Nail Art. Can you share information about your designs and pricing?';
 
 // Generate the WhatsApp link
-let whatsappLink;
-
-// If mobile, the number should be used without the country code
-if (isMobile()) {
-    whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-} else {
-    whatsappLink = `https://wa.me/${countryCode}${phoneNumber}?text=${encodeURIComponent(message)}`;
-}
+const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
 // Set the WhatsApp link to the anchor tag
 document.getElementById('whatsapp-link').href = whatsappLink;
