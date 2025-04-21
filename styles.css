@@ -1155,6 +1155,11 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
+    body{
+    overflow-x: hidden;
+}
+
+    
     .hero-stats {
         grid-template-columns: 1fr;
     }
