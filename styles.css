@@ -10,10 +10,16 @@
     --transition: all 0.3s ease;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+html, body {
+    overflow-x: hidden;
 }
 
 html {
@@ -1155,10 +1161,6 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
-    body{
-    overflow-x: hidden;
-}
-
     
     .hero-stats {
         grid-template-columns: 1fr;
